@@ -5,7 +5,8 @@ import os
 import numpy as np
 import tensorflow as tf
 
-from utils import Env, StateRecorder
+from utils import to_bool
+from rl_env import Env, StateRecorder
 from custom_ops import softmax, state_preprocess, sample_action
 
 
@@ -80,7 +81,7 @@ if __name__ == '__main__':
     parser.add_argument('--game', default='Breakout-Atari2600')
     parser.add_argument('--model', default='c51_cnn')
     parser.add_argument('--checkpoint', default='./log/c51_cnn/c51_cnn-1702501')
-    parser.add_argument('--render', type=bool, default=True)
+    parser.add_argument('--render', type=to_bool, default=True)
     parser.add_argument('--n_atom', type=int, default=51)
     parser.add_argument('--vmax', type=float, default=10.)
     parser.add_argument('--epsilon', type=float, default=0.001)
