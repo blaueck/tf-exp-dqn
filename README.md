@@ -1,5 +1,5 @@
 # Description
-This project implement some reinforcement learning algorithms, including DQN, Double DQN, C51, etc. It contains subset of algorithms from [dopamine](https://github.com/google/dopamine). Compared with dopamine, it is more easier to understand by sacrificing some modularity and encapsulation. Therefore, it is more suitable for study.
+This project implement some reinforcement learning algorithms, including DQN, Double DQN, C51, etc. It contains subset of algorithms from [dopamine](https://github.com/google/dopamine). It's for self study.
 
 # Requirement
 - python == 3.6, other version may work as well.
